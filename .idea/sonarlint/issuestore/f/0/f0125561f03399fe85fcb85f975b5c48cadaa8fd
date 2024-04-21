@@ -1,0 +1,10 @@
+
+	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8´©‡Ôï1J$aa240096-48a9-4215-9945-bbf63404e825
+Š
+java:S20958"GUse try-with-resources or close this "Statement" in a "finally" clause.(³¬Ö8ÒŒÔï1J$c9e60f90-c171-4595-b74d-8165a84dfc24
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(¢ÊÙÓ8ï©‡Ôï1J$c6557f4d-b320-4bcb-933f-c8f06220b44e
+b
+java:S1854"@Remove this useless assignment to local variable "allCustomers".(ƒ®çúÿÿÿÿ8Ñ´¢Ùï1
+S
+java:S1481"1Remove this unused "allCustomers" local variable.(ƒ®çúÿÿÿÿ8Ó´¢Ùï1

@@ -1,0 +1,71 @@
+
+r
+java:S3740)"/Provide the parametrized type for this generic.(òïÈÃ8ˆ»º×ï1J$7229474a-1805-49f8-9349-dbbaaadc4c6c
+r
+java:S3740,"/Provide the parametrized type for this generic.(ßÖ’8ˆ»º×ï1J$b4bc3a16-afaf-4c41-b535-17f3cac93127
+w
+java:S3740-"/Provide the parametrized type for this generic.(Òª„ûÿÿÿÿ8ˆ»º×ï1J$a7df9b60-f249-4764-961c-ccd8e104e90f
+r
+java:S3740."/Provide the parametrized type for this generic.(¶ı¡•8ˆ»º×ï1J$4b014b53-016e-4d71-9c68-dd827a1fcf86
+r
+java:S3740/"/Provide the parametrized type for this generic.(°‚ó…8‰»º×ï1J$68a57af3-89d0-4a59-bdd0-b4d9ae5a51d4
+r
+java:S37400"/Provide the parametrized type for this generic.(Õ…¼í8‰»º×ï1J$82b139ba-0d3e-49e6-9a4a-73835c0c8c3e
+r
+java:S37401"/Provide the parametrized type for this generic.(É’‰È8‰»º×ï1J$7b90cd75-5326-4297-9881-0c7e7b389adb
+Ÿ
+java:S1104&"WMake txtItemCode a static final constant or non-public and provide accessors if needed.(øÜÜ¡üÿÿÿÿ8Œ»º×ï1J$4f494c3a-7616-47ed-81bd-5e8c2712b7a6
+¢
+java:S1104'"ZMake txtDescription a static final constant or non-public and provide accessors if needed.(¼û¥ûÿÿÿÿ8»º×ï1J$982a70af-2e16-4571-8eb6-18a5754d9557
+Ÿ
+java:S1104("WMake txtPackSize a static final constant or non-public and provide accessors if needed.(ÃŞˆüÿÿÿÿ8»º×ï1J$d636590c-f653-478c-a86c-568c434726d3
+š
+java:S1104)"WMake cmbSizeUnit a static final constant or non-public and provide accessors if needed.(òïÈÃ8»º×ï1J$c90e4bda-0626-4f44-96f2-513103d2700f
+œ
+java:S1104*"TMake txtPrice a static final constant or non-public and provide accessors if needed.(˜¹•ıÿÿÿÿ8»º×ï1J$85bfbfa6-4d32-4c48-b2ae-de73e0aa9e74
+š
+java:S1104+"XMake txtQtyOnHand a static final constant or non-public and provide accessors if needed.(è¡”X8»º×ï1J$15ab4424-8e4a-4f78-9559-3e2e17e2dac5
+š
+java:S1104,"WMake tblItemData a static final constant or non-public and provide accessors if needed.(ßÖ’8»º×ï1J$25042648-767d-482c-afc8-f2141f5178f1
+Ÿ
+java:S1104-"WMake colItemCode a static final constant or non-public and provide accessors if needed.(Òª„ûÿÿÿÿ8»º×ï1J$305ebfac-fdf4-4d4d-b5f2-d143718fb2d6
+
+java:S1104."ZMake colDescription a static final constant or non-public and provide accessors if needed.(¶ı¡•8»º×ï1J$42127c7c-7662-43b0-adce-2fe8d701505a
+š
+java:S1104/"WMake colPackSize a static final constant or non-public and provide accessors if needed.(°‚ó…8»º×ï1J$c80cf3c2-e14b-4557-956d-cf194d2b74eb
+›
+java:S11040"XMake colUnitPrice a static final constant or non-public and provide accessors if needed.(Õ…¼í8»º×ï1J$1598c014-324c-4ac5-9386-ffa2cad6202a
+›
+java:S11041"XMake colQtyOnHand a static final constant or non-public and provide accessors if needed.(É’‰È8»º×ï1J$bd607e5c-465f-44b5-9c9d-4f7281b93209
+
+java:S11042"[Make btnNavCustomers a static final constant or non-public and provide accessors if needed.(Š¿Êö8»º×ï1J$6bb9a0c8-dc77-4678-addd-d3801724b700
+Ÿ
+java:S11043"WMake btnNavItems a static final constant or non-public and provide accessors if needed.(üğ¥ìüÿÿÿÿ8»º×ï1J$d6e0c14e-20f3-4e2f-a424-04748ccb546f
+›
+java:S11044"XMake btnNavOrders a static final constant or non-public and provide accessors if needed.(®‘Ûµ8»º×ï1J$df072cea-8896-4ab1-bf3b-6388adb3004e
+‹
+java:S2259¥"BA "NullPointerException" could be thrown; "item" is nullable here.(ÌÜ×§üÿÿÿÿ8‹¼º×ï1J$455554be-0963-407f-9a2a-d38174093bf5
+˜
+java:S2095…"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¡¦Øûÿÿÿÿ8Œ¼º×ï1J$36684084-faaa-4e5a-aa5a-ea8f5d1e78c2
+
+java:S2095f"GUse try-with-resources or close this "Statement" in a "finally" clause.(Â®åæøÿÿÿÿ8Œ¼º×ï1J$ad7af9bd-2c44-42a7-b7b0-98cf8a629b40
+Š
+java:S2095G"GUse try-with-resources or close this "Statement" in a "finally" clause.(¡‡ƒÊ8¼º×ï1J$1ef12b0c-c773-43ed-ae24-f28b57a909d4
+Å
+java:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Íé³¿8¼º×ï1J$3b406d61-9108-4086-af7a-e74e86e3724a
+u
+java:S1172E"2Remove this unused method parameter "actionEvent".(Œ“‘8¼º×ï1J$c96af7ed-3c86-44f2-ac67-8c6a0b862cac
+z
+java:S1172Z"2Remove this unused method parameter "actionEvent".(û°œ§ıÿÿÿÿ8£¼º×ï1J$2085ddc1-36c9-428b-8084-68376eb41c11
+z
+java:S1172y"2Remove this unused method parameter "actionEvent".(»…ä«ùÿÿÿÿ8§¼º×ï1J$8c0bf723-66f6-4c12-bf2b-aa235ad041dc
+v
+java:S1172œ"2Remove this unused method parameter "actionEvent".(áÄ´ü8¬¼º×ï1J$6d8ad96e-b9e7-494d-91fc-07d0e1cd6160
+{
+java:S1172÷"2Remove this unused method parameter "actionEvent".(ÛÛãŠøÿÿÿÿ8¾¼º×ï1J$a7fadc78-9b9c-45be-b477-eb5a495cd52c
+v
+java:S1172"2Remove this unused method parameter "actionEvent".(¾Îï²8Û¼º×ï1J$54391744-3a14-4062-af78-0fad6d508564
+—
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(°‰±—8á¼º×ï1J$8357c40a-dda7-4dbb-b2a1-d3d744a7af34
+q
+java:S1128!"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8á¼º×ï1J$bb902dcb-d3ff-4418-90da-9a121faf4b69

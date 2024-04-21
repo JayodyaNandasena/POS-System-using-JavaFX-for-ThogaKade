@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="650" prefWidth="1000" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.item.ManageItemFormController">
+   <top>
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="60.0" style="-fx-background-color: #ffeaa7;" text="Manage Items" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="714.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="341.33335367838544" minWidth="10.0" prefWidth="287.5555691189236" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="466.6666870117188" minWidth="10.0" prefWidth="462.6666531032986" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <children>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="80.0">
+                     <children>
+                        <JFXTextField fx:id="txtItemCode" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" promptText="Item Code" style="-fx-background-color: #dfe6e9;" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <JFXButton alignment="CENTER" buttonType="RAISED" maxWidth="100.0" minWidth="-Infinity" onAction="#btnSearchOnAction" prefWidth="70.0" style="-fx-background-color: #0984e3;" text="Search" textFill="WHITE" HBox.hgrow="SOMETIMES">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXTextArea fx:id="txtDescription" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="80.0" promptText="Description" style="-fx-background-color: #dfe6e9;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXTextArea>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="80.0">
+                     <children>
+                        <JFXTextField fx:id="txtPackSize" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" promptText="Pack Size" style="-fx-background-color: #dfe6e9;">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="cmbSizeUnit" minHeight="-Infinity" prefHeight="30.0" prefWidth="150.0" promptText="Unit" style="-fx-background-color: #dfe6e9;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXTextField fx:id="txtPrice" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="80.0" promptText="Unit Price" style="-fx-background-color: #dfe6e9;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtQtyOnHand" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="80.0" promptText="Quantity On hand" style="-fx-background-color: #dfe6e9;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <TableView fx:id="tblItemData" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="423.0" GridPane.columnIndex="1">
+              <columns>
+                <TableColumn fx:id="colItemCode" prefWidth="68.00000083446503" text="Item Code" />
+                <TableColumn fx:id="colDescription" prefWidth="130.22216033935547" text="Description" />
+                  <TableColumn fx:id="colPackSize" prefWidth="61.333404541015625" text="Pack Size" />
+                  <TableColumn fx:id="colUnitPrice" prefWidth="68.88885498046875" text="Unit Price" />
+                  <TableColumn fx:id="colQtyOnHand" prefWidth="115.5555419921875" text="Quantity On Hand" />
+              </columns>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TableView>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="58.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" maxWidth="100.0" minWidth="-Infinity" onAction="#btnAddOnAction" prefWidth="70.0" style="-fx-background-color: #00b894;" text="Add" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" maxWidth="100.0" minWidth="-Infinity" onAction="#btnEditOnAction" prefWidth="70.0" style="-fx-background-color: #636e72;" text="Update" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" maxWidth="100.0" minWidth="-Infinity" onAction="#btnDeleteOnAction" prefWidth="70.0" style="-fx-background-color: #d63031;" text="Delete" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="20.0" right="40.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox alignment="CENTER" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <JFXButton fx:id="btnNavCustomers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnNavCustomersOnAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #ffeaa7;" text="Items">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnNavItems" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnNavItemsOnAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #ffeaa7;" text="Items">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnNavOrders" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnNavOrdersOnAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #ffeaa7;" text="Orders">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

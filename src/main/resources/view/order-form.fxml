@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="464.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.order.ManageOrderFormController">
+   <children>
+      <ScrollPane layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="217.0" prefWidth="400.0">
+         <content>
+            <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="400.0" spacing="10.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="lblOrderID" maxWidth="1.7976931348623157E308" text="OrderID" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lblOCustID" maxWidth="1.7976931348623157E308" text="CustomerID" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lblOCustName" maxWidth="1.7976931348623157E308" text="CustomerName" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lblOOrderDate" maxWidth="1.7976931348623157E308" text="OrderDate" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="tblOrderDetails" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="colItemCode" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="70.0" text="Item Code" />
+                        <TableColumn fx:id="colItemName" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="160.0" text="Item" />
+                        <TableColumn fx:id="colQuantity" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="100.0" text="Order Quantity" />
+                        <TableColumn fx:id="colDiscount" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="70.0" text="Discount" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <VBox layoutX="14.0" layoutY="239.0" maxWidth="700.0" prefHeight="225.0" prefWidth="421.0">
+         <children>
+            <Label text="Order Details">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbItemCodes" prefWidth="150.0" promptText="Item Codes" />
+            <Label fx:id="lblDescription" text="Description" />
+            <Label fx:id="lblQtyOnHand" text="Quantity On Hand" />
+            <Label fx:id="lblUnitPrice" text="Unit Price" />
+            <HBox alignment="CENTER" prefWidth="200.0">
+               <children>
+                  <Label text="Item ID">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Item Name">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Quantity">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Unit Price">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <ScrollPane fx:id="scrlOrders" prefHeight="64.0" prefWidth="521.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.order.ManageOrderFormController">
+   <children>
+      <BorderPane layoutX="-8.0" layoutY="-7.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="913.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="580.0" style="-fx-background-color: #ffeaa7;" text="Manage Orders" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </top>
+         <left>
+            <VBox alignment="CENTER" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnNavCustomers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnNavCustomersOnAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #ffeaa7;" text="Items" VBox.vgrow="SOMETIMES">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnNavItems" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnNavItemsOnAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #ffeaa7;" text="Items" VBox.vgrow="SOMETIMES">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnNavOrders" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnNavOrdersOnAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #ffeaa7;" text="Orders" VBox.vgrow="SOMETIMES">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+         <bottom>
+            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="58.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" maxWidth="100.0" minWidth="-Infinity" onAction="#btnAddOnAction" prefWidth="70.0" style="-fx-background-color: #00b894;" text="Add" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" maxWidth="100.0" minWidth="-Infinity" onAction="#btnEditOnAction" prefWidth="70.0" style="-fx-background-color: #636e72;" text="Update" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" maxWidth="100.0" minWidth="-Infinity" onAction="#btnDeleteOnAction" prefWidth="70.0" style="-fx-background-color: #d63031;" text="Delete" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" right="40.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" maxWidth="528.0" prefHeight="540.0" prefWidth="299.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="430.0">
+                           <children>
+                              <DatePicker fx:id="dtOrderDate" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Order date" style="-fx-background-color: #dfe6e9;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </DatePicker>
+                              <Label fx:id="lblCurrentTime" alignment="CENTER" minWidth="-Infinity" prefWidth="80.0" style="-fx-background-color: white;" text="23:59:59" textAlignment="JUSTIFY">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox maxWidth="700.0">
+                           <children>
+                              <JFXTextField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Order ID" style="-fx-background-color: #dfe6e9;" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <VBox maxWidth="700.0" minHeight="-Infinity" prefWidth="100.0">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label text="Customer Details">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbCustomerIDs" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" promptText="Select Customer ID">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <HBox maxWidth="700.0" minWidth="-Infinity" prefHeight="37.0" prefWidth="340.0">
+                                 <children>
+                                    <JFXTextField fx:id="lblCustomerName" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" promptText="Customer Name" HBox.hgrow="SOMETIMES">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="lblCustomerAddress" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" promptText="Address" HBox.hgrow="ALWAYS">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Separator>
+                     </children>
+                  </VBox>
+                  <ScrollPane maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="540.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                     <content>
+                        <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="436.0" prefWidth="400.0" spacing="10.0">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <children>
+                              <VBox maxWidth="700.0" prefHeight="300.0" prefWidth="265.0">
+                                 <children>
+                                    <Label text="Order Details">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="cmbItemCodes" prefWidth="150.0" promptText="Item Codes">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <Label fx:id="lblDescription" text="Description">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lblQtyOnHand" text="Quantity On Hand">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lblUnitPrice" text="Unit Price">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <JFXTextField promptText="Enter Quantity">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </JFXTextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <TableView fx:id="tblCart" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="242.0" prefWidth="390.0" VBox.vgrow="ALWAYS">
+                                <columns>
+                                  <TableColumn fx:id="colItemCode" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="70.0" text="Item Code" />
+                                  <TableColumn fx:id="colItemName" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="91.99999237060547" text="Description" />
+                                    <TableColumn fx:id="colQuantity" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="79.5555419921875" text="Quantity" />
+                                    <TableColumn fx:id="colDiscount" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="76.44441223144531" text="Unit Price" />
+                                    <TableColumn fx:id="colDiscount1" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="76.44441223144531" text="Discount" />
+                                    <TableColumn fx:id="colDiscount2" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="76.44441223144531" text="Unit Price" />
+                                </columns>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TableView>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Net Total">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="29.0" prefWidth="81.0" text="Rs. 0.00">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="5.0" right="50.0" top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton prefHeight="29.0" prefWidth="106.0" style="-fx-background-color: #00b894;" text="Place Order" textFill="WHITE">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="20.0" top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

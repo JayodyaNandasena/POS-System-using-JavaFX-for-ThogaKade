@@ -1,0 +1,97 @@
+
+	java:S112Á"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8îˆ”Ùï1J$44137dc1-d3ae-4a8d-bab9-c3b3061e79a9
+w
+java:S3740:"/Provide the parametrized type for this generic.(Òª„ûÿÿÿÿ8ÿİ’Ùï1J$b89da9b1-1cdc-4159-8ca1-33432b866998
+w
+java:S3740;"/Provide the parametrized type for this generic.(£ºÏòûÿÿÿÿ8ÿİ’Ùï1J$c8dacc8e-825b-4538-ab33-5e7b7d4fe15b
+w
+java:S3740<"/Provide the parametrized type for this generic.(ıàİËşÿÿÿÿ8ÿİ’Ùï1J$e9775e44-8ee3-40ba-a1f5-da9fed49e6c0
+r
+java:S3740="/Provide the parametrized type for this generic.(ÁÊšÖ8ÿİ’Ùï1J$ddddf847-9189-466c-ac05-6b60bf297fea
+w
+java:S3740>"/Provide the parametrized type for this generic.(Ìæ«ˆıÿÿÿÿ8ÿİ’Ùï1J$98309608-919c-4ca9-ae7a-9200d8d51437
+w
+java:S3740@"/Provide the parametrized type for this generic.(¸×¢˜øÿÿÿÿ8ÿİ’Ùï1J$c421e9a1-533c-4452-9140-5f257b2ce6c0
+w
+java:S3740A"/Provide the parametrized type for this generic.(¼èœêüÿÿÿÿ8ÿİ’Ùï1J$4b7f110c-6ef7-43ae-97e4-c8c46bd43fe9
+q
+java:S3740t"/Provide the parametrized type for this generic.(ê©ı.8ğˆ”Ùï1J$4cd8f966-7fbb-4bf0-87a0-2a2728a723bf
+x
+java:S3740ˆ"/Provide the parametrized type for this generic.(ñ‹è—ùÿÿÿÿ8ğˆ”Ùï1J$d9781cba-2cd9-4dec-a0c5-be39610eb68b
+s
+java:S3740±"/Provide the parametrized type for this generic.(¯¢ğ8ğˆ”Ùï1J$ca2a2056-279a-45f4-8bde-1847617a6b0f
+s
+java:S3740±"/Provide the parametrized type for this generic.(¯¢ğ8ğˆ”Ùï1J$203bc29b-0d76-4c7a-86b5-1224a682582a
+
+java:S1104/"[Make btnNavCustomers a static final constant or non-public and provide accessors if needed.(Š¿Êö8Ş’Ùï1J$8efbe28d-31c5-4b9e-8168-908b81393328
+Ÿ
+java:S11040"WMake btnNavItems a static final constant or non-public and provide accessors if needed.(üğ¥ìüÿÿÿÿ8Ş’Ùï1J$5e2e4b31-518d-4e04-bd44-f1691011cc39
+›
+java:S11041"XMake btnNavOrders a static final constant or non-public and provide accessors if needed.(®‘Ûµ8Ş’Ùï1J$4a4f150f-7656-4d6b-9b77-6313934a8ccf
+
+java:S11042"VMake scrlOrders a static final constant or non-public and provide accessors if needed.(¦§Ş‡üÿÿÿÿ8Ş’Ùï1J$6f8f8423-0909-4e54-99a2-e88be49200c6
+
+java:S11043"[Make lblCustomerName a static final constant or non-public and provide accessors if needed.(–Ï“©8Ş’Ùï1J$96d5c3ff-c738-47eb-9971-6ac91db74b30
+¡
+java:S11044"^Make lblCustomerAddress a static final constant or non-public and provide accessors if needed.(Ñ÷Éô8Ş’Ùï1J$b3aec28e-0a63-43c4-b052-df11f76c6532
+Ÿ
+java:S11045"WMake dtOrderDate a static final constant or non-public and provide accessors if needed.(†‹ä®úÿÿÿÿ8Ş’Ùï1J$bd6fdb38-f2ff-41af-9fd3-9509e8187f20
+
+java:S11046"VMake lblOrderID a static final constant or non-public and provide accessors if needed.(˜Ã—ùÿÿÿÿ8Ş’Ùï1J$f5e2e53e-8d68-4499-bbd4-28832d23ea51
+
+java:S11047"VMake lblOCustID a static final constant or non-public and provide accessors if needed.(ë‚ëøûÿÿÿÿ8Ş’Ùï1J$e3a1e6a2-10bb-4e9a-9340-e128ff2775ac
+ 
+java:S11048"XMake lblOCustName a static final constant or non-public and provide accessors if needed.(‚’ëÿÿÿÿÿ8Ş’Ùï1J$2d2f5948-c263-4077-bd40-df2e3e5f65e2
+¡
+java:S11049"YMake lblOOrderDate a static final constant or non-public and provide accessors if needed.(€¿¢Œşÿÿÿÿ8Ş’Ùï1J$a75dcf72-1d98-49fe-8bfc-9fe04fc65926
+Ÿ
+java:S1104:"WMake colItemCode a static final constant or non-public and provide accessors if needed.(Òª„ûÿÿÿÿ8Ş’Ùï1J$19438459-5e08-4e60-a5d0-42c8a6b32003
+Ÿ
+java:S1104;"WMake colItemName a static final constant or non-public and provide accessors if needed.(£ºÏòûÿÿÿÿ8Ş’Ùï1J$6053aabd-b738-4a5e-9d6d-a929da9c4d5d
+Ÿ
+java:S1104<"WMake colQuantity a static final constant or non-public and provide accessors if needed.(ıàİËşÿÿÿÿ8Ş’Ùï1J$acf761c2-d0a1-4230-890f-272f39451ab5
+š
+java:S1104="WMake colDiscount a static final constant or non-public and provide accessors if needed.(ÁÊšÖ8Ş’Ùï1J$e668b810-a4be-447e-b93d-df746e6d10da
+£
+java:S1104>"[Make tblOrderDetails a static final constant or non-public and provide accessors if needed.(Ìæ«ˆıÿÿÿÿ8Ş’Ùï1J$e80007dc-493b-42d0-85e7-c3cf288b699c
+¢
+java:S1104?"ZMake lblCurrentTime a static final constant or non-public and provide accessors if needed.(‚Ü½Êøÿÿÿÿ8Ş’Ùï1J$a55786c9-8425-4d54-ab8e-c39f0c988252
+ 
+java:S1104@"XMake cmbItemCodes a static final constant or non-public and provide accessors if needed.(¸×¢˜øÿÿÿÿ8Ş’Ùï1J$7e594dcf-8426-45d2-abf6-85ebd8fd72af
+¢
+java:S1104A"ZMake cmbCustomerIDs a static final constant or non-public and provide accessors if needed.(¼èœêüÿÿÿÿ8Ş’Ùï1J$b48be934-e40d-449d-9ad6-e922940d7c2e
+¢
+java:S1104B"ZMake lblDescription a static final constant or non-public and provide accessors if needed.(ñÍã×ÿÿÿÿÿ8Ş’Ùï1J$765e46a5-2809-4251-9b29-04c5b8db9445
+›
+java:S1104C"XMake lblQtyOnHand a static final constant or non-public and provide accessors if needed.(ŸÛö·8Ş’Ùï1J$1df39821-a36e-42f1-a61e-f48f6987a2ff
+š
+java:S1104D"XMake lblUnitPrice a static final constant or non-public and provide accessors if needed.(°„«8‚Ş’Ùï1J$b26d3e9a-0caa-45f7-9ff5-4e01a74cb322
+…
+java:S2259k"BA "NullPointerException" could be thrown; "item" is nullable here.(ˆ„û”8­Ş’Ùï1J$83010e5a-58db-47c4-bf88-116a2cb383df
+‹
+java:S2095Ø"GUse try-with-resources or close this "Statement" in a "finally" clause.(Àƒµ8‰”Ùï1J$97e6b8d6-9da3-4359-b5d1-42d4c905e6eb
+Š
+java:S2095«"GUse try-with-resources or close this "Statement" in a "finally" clause.(¹‘½P8œ‰”Ùï1J$dd772b23-ef2f-40fc-9ea6-d2b030b96662
+Ê
+java:S1186é"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»…ä«ùÿÿÿÿ8‰”Ùï1J$c1e55a9a-c571-47b0-8874-5cc3d2671a8e
+Ê
+java:S1186ì"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(û°œ§ıÿÿÿÿ8‰”Ùï1J$e6cf4c49-f468-4508-a4b2-3eb5d1fabace
+Å
+java:S1186ï"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œ“‘8‰”Ùï1J$e6d3e0c2-2b11-4aef-97c9-68444d18cffd
+Å
+java:S1186Å"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¾Îï²8‰”Ùï1J$ee0cfff6-01a8-49d8-b3ef-e7063063f100
+~	java:S125R"<This block of commented-out lines of code should be removed.(ó½¸8´Ş’Ùï1J$1823255a-ab71-41ab-930d-7e2c64b2e5eb
+o
+java:S1602W",Remove useless curly braces around statement(¢Àƒ´8µŞ’Ùï1J$43d650d1-5300-4494-9b36-ebb078de27d4
+t
+java:S1602\",Remove useless curly braces around statement(ÖÈ­µıÿÿÿÿ8¶Ş’Ùï1J$6f23719d-e86b-46fb-b070-52a854227cd2
+o
+java:S1602v",Remove useless curly braces around statement(û³Òº8¬”Ùï1J$a344a239-2820-4cad-ac1a-bed993450f69
+p
+java:S1602‹",Remove useless curly braces around statement(½Â‡‡8ÍëšÙï1J$1d065952-7601-43f6-ba42-281ce10cfdb7
+‰
+java:S1117°"@Rename "lblUnitPrice" which hides the field declared at line 68.(èÉóùÿÿÿÿÿ8±‰”Ùï1J$97f2fe1e-fe0d-4b4f-b708-539fb97ffccb
+{
+java:S1172—"2Remove this unused method parameter "actionEvent".(ÛÛãŠøÿÿÿÿ8»‰”Ùï1J$90560d85-7947-44e2-8631-65dc9bae37b6
+v
+java:S1172®"2Remove this unused method parameter "actionEvent".(Íé³¿8Æ‰”Ùï1J$eef51397-5844-46bc-8be0-b95633f1e0d1

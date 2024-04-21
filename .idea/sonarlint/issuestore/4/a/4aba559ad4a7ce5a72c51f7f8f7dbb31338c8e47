@@ -1,0 +1,11 @@
+
+	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8é²“Õï1J$65dfda33-2040-4a6d-8a85-a93c751cfa6e
+	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ë²“Õï1J$a0194d95-0787-4b8d-a2ec-3aa090c3e8ad
+‰
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(¹‘½P8ş²“Õï1J$989e1d9e-3ed6-436b-9200-dd96cf0148cd
+
+java:S2095-"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÌŞ¿ßüÿÿÿÿ8¨Ö”Õï1J$c8ff6d4b-4597-46ad-8112-733fcbe51eed
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ì½ÍÒ8€³“Õï1J$b25c56b0-c443-4543-a25f-7cf24a52affd
+y
+java:S1128"7Remove this unused import 'javafx.scene.control.Alert'.(ÊÇê:8ã¸Õï1J$1dcda801-7091-4855-9da9-06bf36783a29
