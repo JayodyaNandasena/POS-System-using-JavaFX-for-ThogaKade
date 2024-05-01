@@ -1,10 +1,14 @@
 
-	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8´©‡Ôï1J$aa240096-48a9-4215-9945-bbf63404e825
-Š
-java:S20958"GUse try-with-resources or close this "Statement" in a "finally" clause.(³¬Ö8ÒŒÔï1J$c9e60f90-c171-4595-b74d-8165a84dfc24
-Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(¢ÊÙÓ8ï©‡Ôï1J$c6557f4d-b320-4bcb-933f-c8f06220b44e
-b
-java:S1854"@Remove this useless assignment to local variable "allCustomers".(ƒ®çúÿÿÿÿ8Ñ´¢Ùï1
-S
-java:S1481"1Remove this unused "allCustomers" local variable.(ƒ®çúÿÿÿÿ8Ó´¢Ùï1
+“	java:S117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Ş—Á8˜ŒŸ©ó1J$bf7df13f-1d13-43d2-a0d1-8c46e8beb9c9
+˜	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÛçÎøÿÿÿÿ8˜ŒŸ©ó1J$6a7ee97d-1121-44fd-acb3-13377f621b4f
+á
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ƒğÄÊûÿÿÿÿ8ÆŒŸ©ó1J$01900399-098f-4f00-8edf-ff6b25f0fe4c
+n
+java:S11687"+Return an empty collection instead of null.(¥¹ï8¾îº©ó1J$33f01af7-6b72-48ff-a8f9-0b38355d175d
+}
+java:S1128"5Remove this unused import 'edu.icet.db.DBConnection'.(ÿïğ ÿÿÿÿÿ8àŒŸ©ó1J$9715761b-82d3-476a-9daf-7b1020bdfee4
+s
+java:S1128
+"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8áŒŸ©ó1J$99703cf3-8d9d-42cc-af6c-3ff03e9e750d
+
+java:S1128"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ8áŒŸ©ó1J$30939547-cd03-4115-a6d7-1cd7638a22ec

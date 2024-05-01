@@ -73,15 +73,21 @@ public class ManageCustomerFormController implements Initializable {
     public void btnSearchOnAction(ActionEvent actionEvent) {
         Customer customer = CustomerController.getInstance().searchCustomer(txtCustomerID.getText());
 
-        txtCustomerID.setText(customer.getId());
-        cmbTitle.setValue(customer.getTitle());
-        txtName.setText(customer.getName());
-        dateDOB.setValue(customer.getDob());
-        txtSalary.setText(customer.getSalary().toString());
-        txtAddress.setText(customer.getAddress());
-        txtCity.setText(customer.getCity());
-        txtProvince.setText(customer.getProvince());
-        txtPostalCode.setText(customer.getPostalCode());
+        if (customer != null) {
+            txtCustomerID.setText(customer.getId());
+            cmbTitle.setValue(customer.getTitle());
+            txtName.setText(customer.getName());
+            dateDOB.setValue(customer.getDob());
+            txtSalary.setText(customer.getSalary().toString());
+            txtAddress.setText(customer.getAddress());
+            txtCity.setText(customer.getCity());
+            txtProvince.setText(customer.getProvince());
+            txtPostalCode.setText(customer.getPostalCode());
+        }else{
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setContentText("No Customer Found!");
+            alert.show();
+        }
     }
 
     public void btnAddOnAction(ActionEvent actionEvent) throws ParseException {
@@ -96,21 +102,7 @@ public class ManageCustomerFormController implements Initializable {
                 txtPostalCode.getText()
         );
 
-        try {
-            Connection connection = DBConnection.getInstance().getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO customer VALUES (?,?,?,?,?,?,?,?,?)");
-            preparedStatement.setString(1, customer.getId());
-            preparedStatement.setString(2, customer.getTitle());
-            preparedStatement.setString(3, customer.getName());
-            preparedStatement.setObject(4, customer.getDob());
-            preparedStatement.setDouble(5, customer.getSalary());
-            preparedStatement.setString(6, customer.getAddress());
-            preparedStatement.setString(7, customer.getCity());
-            preparedStatement.setString(8, customer.getProvince());
-            preparedStatement.setString(9, customer.getPostalCode());
-
-            preparedStatement.execute();
-
+        if (CustomerController.getInstance().addCustomer(customer)){
             loadTable01();
             loadTable02();
 
@@ -119,11 +111,6 @@ public class ManageCustomerFormController implements Initializable {
             alert.show();
 
             cleartext();
-
-        } catch (ClassNotFoundException | SQLException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText(e.getMessage());
-            alert.show();
         }
 
     }

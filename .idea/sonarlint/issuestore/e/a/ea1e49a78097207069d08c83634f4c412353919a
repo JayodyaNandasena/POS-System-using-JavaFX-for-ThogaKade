@@ -45,12 +45,12 @@ java:S11043"WMake btnNavItems a static final constant or non-public and provide
 java:S11044"XMake btnNavOrders a static final constant or non-public and provide accessors if needed.(®‘Ûµ8»º×ï1J$df072cea-8896-4ab1-bf3b-6388adb3004e
 ‹
 java:S2259¥"BA "NullPointerException" could be thrown; "item" is nullable here.(ÌÜ×§üÿÿÿÿ8‹¼º×ï1J$455554be-0963-407f-9a2a-d38174093bf5
-˜
-java:S2095…"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¡¦Øûÿÿÿÿ8Œ¼º×ï1J$36684084-faaa-4e5a-aa5a-ea8f5d1e78c2
-
-java:S2095f"GUse try-with-resources or close this "Statement" in a "finally" clause.(Â®åæøÿÿÿÿ8Œ¼º×ï1J$ad7af9bd-2c44-42a7-b7b0-98cf8a629b40
 Š
 java:S2095G"GUse try-with-resources or close this "Statement" in a "finally" clause.(¡‡ƒÊ8¼º×ï1J$1ef12b0c-c773-43ed-ae24-f28b57a909d4
+
+java:S2095f"GUse try-with-resources or close this "Statement" in a "finally" clause.(Â®åæøÿÿÿÿ8Œ¼º×ï1J$ad7af9bd-2c44-42a7-b7b0-98cf8a629b40
+˜
+java:S2095…"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¡¦Øûÿÿÿÿ8Œ¼º×ï1J$36684084-faaa-4e5a-aa5a-ea8f5d1e78c2
 Å
 java:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Íé³¿8¼º×ï1J$3b406d61-9108-4086-af7a-e74e86e3724a
 u

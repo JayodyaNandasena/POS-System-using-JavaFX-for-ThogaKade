@@ -8,10 +8,11 @@ import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CustomerController {
+public class CustomerController implements CustomerService{
     private static CustomerController instance;
     private CustomerController(){
 
@@ -22,10 +23,10 @@ public class CustomerController {
         }
         return  instance;
     }
+    @Override
     public ObservableList<Customer> getAllCustomers(){
         try {
-            Customer allCustomers = CrudUtil.execute("SELECT * FROM customer");
-            ResultSet resultSet= DBConnection.getInstance().getConnection().createStatement().executeQuery("SELECT * FROM customer");
+            ResultSet resultSet= CrudUtil.execute("SELECT * FROM customer");
 
             ObservableList<Customer> customerObservableList= FXCollections.observableArrayList();
 
@@ -47,14 +48,45 @@ public class CustomerController {
             }
             return customerObservableList;
         } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText(e.getMessage());
+            alert.show();
         }
+        return null;
     }
-    public Customer searchCustomer(String customerID){
+
+    @Override
+    public boolean addCustomer(Customer customer){
+        String SQL="INSERT INTO customer VALUES (?,?,?,?,?,?,?,?,?)";
+
         try {
-            Connection connection=DBConnection.getInstance().getConnection();
-            ResultSet resultSet = connection.createStatement().executeQuery("SELECT * FROM customer WHERE CustID='" + customerID + "'");
-            while (resultSet.next()){
+            return CrudUtil.execute(
+                    SQL,
+                    customer.getId(),
+                    customer.getTitle(),
+                    customer.getName(),
+                    customer.getDob(),
+                    customer.getSalary(),
+                    customer.getAddress(),
+                    customer.getCity(),
+                    customer.getProvince(),
+                    customer.getPostalCode()
+                    );
+        } catch (SQLException | ClassNotFoundException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText(e.getMessage());
+            alert.show();
+        }
+        return false;
+    }
+
+    @Override
+    public Customer searchCustomer(String customerID){
+        String SQL = "SELECT * FROM customer WHERE CustID=?";
+        try {
+            ResultSet resultSet = CrudUtil.execute(SQL, customerID);
+
+            while (resultSet.next()) {
                 return new Customer(
                         resultSet.getString(1),
                         resultSet.getString(2),
@@ -67,7 +99,6 @@ public class CustomerController {
                         resultSet.getString(9)
                 );
             }
-
         } catch (ClassNotFoundException | SQLException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
