@@ -50,18 +50,18 @@ public class CustomerController implements CustomerService{
         } catch (SQLException | ClassNotFoundException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
-            alert.show();
+            alert.showAndWait();
         }
         return null;
     }
 
     @Override
     public boolean addCustomer(Customer customer){
-        String SQL="INSERT INTO customer VALUES (?,?,?,?,?,?,?,?,?)";
+        String sql="INSERT INTO customer VALUES (?,?,?,?,?,?,?,?,?)";
 
         try {
             return CrudUtil.execute(
-                    SQL,
+                    sql,
                     customer.getId(),
                     customer.getTitle(),
                     customer.getName(),
@@ -71,20 +71,20 @@ public class CustomerController implements CustomerService{
                     customer.getCity(),
                     customer.getProvince(),
                     customer.getPostalCode()
-                    );
+            );
         } catch (SQLException | ClassNotFoundException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
-            alert.show();
+            alert.showAndWait();
         }
         return false;
     }
 
     @Override
     public Customer searchCustomer(String customerID){
-        String SQL = "SELECT * FROM customer WHERE CustID=?";
+        String sql = "SELECT * FROM customer WHERE CustID=?";
         try {
-            ResultSet resultSet = CrudUtil.execute(SQL, customerID);
+            ResultSet resultSet = CrudUtil.execute(sql, customerID);
 
             while (resultSet.next()) {
                 return new Customer(
@@ -102,7 +102,7 @@ public class CustomerController implements CustomerService{
         } catch (ClassNotFoundException | SQLException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
-            alert.show();
+            alert.showAndWait();
         }
         return null;
     }

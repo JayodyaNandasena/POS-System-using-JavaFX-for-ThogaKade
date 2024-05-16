@@ -8,8 +8,8 @@ import lombok.*;
 @Setter
 @ToString
 public class OrderDetail {
+    private String orderID;
     private String itemCode;
-    private String itemName;
-    private Integer orderQuantity;
+    private Integer itemQuantity;
     private Double discount;
 }

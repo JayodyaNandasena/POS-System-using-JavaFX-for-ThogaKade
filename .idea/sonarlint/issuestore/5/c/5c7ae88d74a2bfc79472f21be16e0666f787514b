@@ -1,0 +1,108 @@
+
+	java:S112Ñ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8›ë–Œô1J$3eb612c1-5842-4080-88ec-2189baf25cad
+	java:S112ö"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8 ë–Œô1J$f7a50e4c-4af8-445e-b667-498896b693f8
+w
+java:S3740;"/Provide the parametrized type for this generic.(Ìæ«ˆıÿÿÿÿ8¥ë–Œô1J$ad828049-ed37-4ed3-ac2b-9bc9351c2103
+w
+java:S3740="/Provide the parametrized type for this generic.(¸×¢˜øÿÿÿÿ8¨ë–Œô1J$f2dad0d5-aac2-4eea-abef-11fa01275817
+w
+java:S3740>"/Provide the parametrized type for this generic.(¼èœêüÿÿÿÿ8©ë–Œô1J$e448e813-7d1b-4b6b-950e-efa75d069c68
+w
+java:S3740D"/Provide the parametrized type for this generic.(Òª„ûÿÿÿÿ8ªë–Œô1J$e831dd77-c4b4-40e9-baea-cd9737d1f759
+w
+java:S3740E"/Provide the parametrized type for this generic.(£ºÏòûÿÿÿÿ8ªë–Œô1J$b045c5ea-ce9a-4bcc-bad7-296a3b15ed7b
+w
+java:S3740F"/Provide the parametrized type for this generic.(ıàİËşÿÿÿÿ8«ë–Œô1J$f10083f7-e140-4a6a-aa1e-9afdd330cfc8
+r
+java:S3740G"/Provide the parametrized type for this generic.(ÁÊšÖ8«ë–Œô1J$2a86d499-f779-4b1c-a9ce-1710445cf73b
+r
+java:S3740H"/Provide the parametrized type for this generic.(Õ…¼í8¬ë–Œô1J$e8d22420-cc33-40a7-ae86-0ee53abf890c
+r
+java:S3740I"/Provide the parametrized type for this generic.(Æ¦Œê8¬ë–Œô1J$5a4d1d75-e9c2-471a-b04c-981eb232b887
+q
+java:S3740}"/Provide the parametrized type for this generic.(ê©ı.8­ë–Œô1J$b9208393-3c64-4c82-b10e-c20a6a86701d
+x
+java:S3740‘"/Provide the parametrized type for this generic.(ñ‹è—ùÿÿÿÿ8®ë–Œô1J$668c4a3e-7867-4874-9848-a70af004bf89
+s
+java:S3740æ"/Provide the parametrized type for this generic.(¯¢ğ8°ë–Œô1J$8b715254-13de-42a9-8e06-5550cf48c7c3
+s
+java:S3740æ"/Provide the parametrized type for this generic.(¯¢ğ8±ë–Œô1J$4583cabd-d127-4617-8604-d5e77882ac93
+
+java:S11040"[Make btnNavCustomers a static final constant or non-public and provide accessors if needed.(Š¿Êö8½ë–Œô1J$c76a4b18-d22a-4fdb-8e27-bd31bb705c6e
+Ÿ
+java:S11041"WMake btnNavItems a static final constant or non-public and provide accessors if needed.(üğ¥ìüÿÿÿÿ8¿ë–Œô1J$cd3207c5-5580-4808-8f70-057faa038bef
+›
+java:S11042"XMake btnNavOrders a static final constant or non-public and provide accessors if needed.(®‘Ûµ8Àë–Œô1J$4d05939e-78b2-4458-97c7-57dff81013f9
+
+java:S11043"VMake scrlOrders a static final constant or non-public and provide accessors if needed.(¦§Ş‡üÿÿÿÿ8Âë–Œô1J$c7cb84f7-ae98-4784-86b8-293cd932f53e
+
+java:S11044"[Make lblCustomerName a static final constant or non-public and provide accessors if needed.(–Ï“©8Ãë–Œô1J$c40d34b8-72d1-421d-a200-cb3548f24937
+¡
+java:S11045"^Make lblCustomerAddress a static final constant or non-public and provide accessors if needed.(Ñ÷Éô8Ëë–Œô1J$fa3536da-9ef2-463b-8493-580bf3f9198d
+Ÿ
+java:S11046"WMake dtOrderDate a static final constant or non-public and provide accessors if needed.(†‹ä®úÿÿÿÿ8Ìë–Œô1J$112ce5c9-66d8-4058-9a77-1b56ea962e37
+
+java:S11047"VMake lblOrderID a static final constant or non-public and provide accessors if needed.(˜Ã—ùÿÿÿÿ8Íë–Œô1J$ca45ea87-b451-4ae1-b3b6-bc263e328dc7
+
+java:S11048"VMake lblOCustID a static final constant or non-public and provide accessors if needed.(ë‚ëøûÿÿÿÿ8Íë–Œô1J$077e9f7c-5ddd-4240-a3f0-41d42dcec67f
+ 
+java:S11049"XMake lblOCustName a static final constant or non-public and provide accessors if needed.(‚’ëÿÿÿÿÿ8Îë–Œô1J$353cf2e3-1e34-4ad8-b5fb-a0cdea1a28d9
+¡
+java:S1104:"YMake lblOOrderDate a static final constant or non-public and provide accessors if needed.(€¿¢Œşÿÿÿÿ8Îë–Œô1J$54dd9baf-f1e5-450b-9023-35d2bcfe20dd
+£
+java:S1104;"[Make tblOrderDetails a static final constant or non-public and provide accessors if needed.(Ìæ«ˆıÿÿÿÿ8Ïë–Œô1J$d4a10f89-a2d9-45b6-ab3c-816f8e4d0026
+¢
+java:S1104<"ZMake lblCurrentTime a static final constant or non-public and provide accessors if needed.(‚Ü½Êøÿÿÿÿ8Ïë–Œô1J$25ffda30-cb86-417b-a282-bb53f15a47eb
+ 
+java:S1104="XMake cmbItemCodes a static final constant or non-public and provide accessors if needed.(¸×¢˜øÿÿÿÿ8Ğë–Œô1J$34bbb860-3a3f-4523-be86-7f763ec0f6ae
+¢
+java:S1104>"ZMake cmbCustomerIDs a static final constant or non-public and provide accessors if needed.(¼èœêüÿÿÿÿ8Ğë–Œô1J$631d77a2-8b83-4123-87ab-9ca3cc186333
+¢
+java:S1104?"ZMake lblDescription a static final constant or non-public and provide accessors if needed.(ñÍã×ÿÿÿÿÿ8Ñë–Œô1J$f2ab2410-7aa5-4a06-a1dd-ab59e13d5db7
+›
+java:S1104@"XMake lblQtyOnHand a static final constant or non-public and provide accessors if needed.(ŸÛö·8Ñë–Œô1J$85216dd4-75c5-4751-a5ee-684de1d51f21
+š
+java:S1104A"XMake lblUnitPrice a static final constant or non-public and provide accessors if needed.(°„«8Ñë–Œô1J$3f2bcd5e-ffa9-49dc-b7f7-6eef763f0a59
+ 
+java:S1104B"XMake btnAddToCart a static final constant or non-public and provide accessors if needed.(’°µüÿÿÿÿ8Ôë–Œô1J$c2e4b642-6c34-47af-a7ae-ddbeff2835fa
+Ÿ
+java:S1104C"WMake lblOrderId1 a static final constant or non-public and provide accessors if needed.(ñ’¼Şÿÿÿÿÿ8Öë–Œô1J$b3c57d66-a3d6-4c46-a3a4-913ee06d2b37
+Ÿ
+java:S1104D"WMake colItemCode a static final constant or non-public and provide accessors if needed.(Òª„ûÿÿÿÿ8×ë–Œô1J$9641e057-721c-42b9-9c8a-94712b7c6d0f
+Ÿ
+java:S1104E"WMake colItemName a static final constant or non-public and provide accessors if needed.(£ºÏòûÿÿÿÿ8Ùë–Œô1J$56766ca6-3107-4d5c-b678-e34613f7bd98
+Ÿ
+java:S1104F"WMake colQuantity a static final constant or non-public and provide accessors if needed.(ıàİËşÿÿÿÿ8Úë–Œô1J$011dc431-c77e-4b2a-980a-6314faa257a0
+š
+java:S1104G"WMake colDiscount a static final constant or non-public and provide accessors if needed.(ÁÊšÖ8Üë–Œô1J$585280c5-79fc-4a5e-ba40-e55fcd3fdf2b
+›
+java:S1104H"XMake colUnitPrice a static final constant or non-public and provide accessors if needed.(Õ…¼í8İë–Œô1J$fe2c66aa-c567-4d41-8458-07446e6de8b2
+—
+java:S1104I"TMake colPrice a static final constant or non-public and provide accessors if needed.(Æ¦Œê8Şë–Œô1J$80a6f01b-f5fa-4055-89a6-cc67b88fbe72
+š
+java:S1104J"WMake txtQuantity a static final constant or non-public and provide accessors if needed.(ú­À8àë–Œô1J$b544c436-d849-4280-ab53-6be2b735f2d3
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»…ä«ùÿÿÿÿ8Öî–Œô1J$feb7e0bd-25fc-48ac-a80f-7959d47ea7a6
+Ê
+java:S1186¡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(û°œ§ıÿÿÿÿ8Øî–Œô1J$441ec34a-838f-4d64-ad9f-1dd1bae06433
+Å
+java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œ“‘8Ùî–Œô1J$1c719811-50f5-4ea5-acc3-2ec2640a5d61
+Å
+java:S1186ú"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¾Îï²8Úî–Œô1J$0d52fe78-8522-4cc6-9688-c5e4a04f3e6e
+~	java:S125Z"<This block of commented-out lines of code should be removed.(ó½¸8…ï–Œô1J$3595e265-2a2a-4e34-9b5e-b2d55060e02c
+o
+java:S1602`",Remove useless curly braces around statement(¢Àƒ´8‰ï–Œô1J$15c429e4-d656-4e65-b264-657a24e81d5f
+t
+java:S1602e",Remove useless curly braces around statement(ÖÈ­µıÿÿÿÿ8¤ï–Œô1J$7eaf9e11-9f91-4f72-a3d7-d33dc6529c6e
+o
+java:S1602",Remove useless curly braces around statement(û³Òº8­ï–Œô1J$0ac415f7-cd27-4db0-96c5-572778e986e5
+p
+java:S1602”",Remove useless curly braces around statement(½Â‡‡8´ï–Œô1J$13736836-ce60-417b-a9b1-222b6c25950e
+{
+java:S1172Ô"2Remove this unused method parameter "actionEvent".(Š²Ô¢úÿÿÿÿ8Õï–Œô1J$08ac47b1-69d9-474b-b408-67d81f94720d
+‰
+java:S1117å"@Rename "lblUnitPrice" which hides the field declared at line 65.(èÉóùÿÿÿÿÿ8àï–Œô1J$6faa1abc-4716-4aff-a802-8c23fc4fbfd4
+{
+java:S1172Ì"2Remove this unused method parameter "actionEvent".(ÛÛãŠøÿÿÿÿ8şï–Œô1J$5a093dbf-8489-4019-a975-6f5931d247e4
+v
+java:S1172ã"2Remove this unused method parameter "actionEvent".(Íé³¿8ßğ–Œô1J$29292c33-56db-4e73-9167-3c3b8b5bb282

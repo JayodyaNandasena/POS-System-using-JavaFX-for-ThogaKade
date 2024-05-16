@@ -1,0 +1,7 @@
+
+	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ó”Û‹ø1J$cceb5dec-82af-4ba7-a7ed-28d1af412a9d
+k
+java:S5411"(Use a primitive boolean expression here.(Ó”—Ğ8õ”Û‹ø1J$f19ddfab-5ea1-4e8f-afa3-c50eddf1efa2
+Ü
+java:S6548	"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(âØ¡®8û”Û‹ø1J$bf7c152e-1d7e-411b-8000-55c5b4f74dea
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ø‘Üàÿÿÿÿÿ8®©Û‹ø1J$be099acc-9c35-43be-8136-06496fad0ae7

@@ -1,0 +1,8 @@
+
+	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÏîŠø1J$6afad14d-d985-43cb-bb2e-2e0e9eb6a67e
+p
+java:S5411("(Use a primitive boolean expression here.(äô±¨ùÿÿÿÿ8§ÏîŠø1J$77ca9c89-4bad-409a-a3ed-8ebbfaac722a
+p
+java:S5411+"(Use a primitive boolean expression here.(à˜¯€şÿÿÿÿ8§ÏîŠø1J$630c3985-6db4-4276-a0e2-dbbfd97b0b48
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(™ ¨Œ8¬ÏîŠø1J$e088e0aa-8ffe-4c6b-acb2-b730d4674160

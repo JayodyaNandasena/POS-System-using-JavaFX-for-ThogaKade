@@ -16,10 +16,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ContentDisplay;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -38,7 +35,7 @@ public class ManageItemFormController implements Initializable {
     public JFXTextField txtItemCode;
     public JFXTextArea txtDescription;
     public JFXTextField txtPackSize;
-    public JFXComboBox cmbSizeUnit;
+    public ComboBox cmbSizeUnit;
     public JFXTextField txtPrice;
     public JFXTextField txtQtyOnHand;
     public TableView tblItemData;
@@ -67,55 +64,47 @@ public class ManageItemFormController implements Initializable {
     }
 
     public void btnDeleteOnAction(ActionEvent actionEvent) {
-        try {
-            boolean deleteStatus = DBConnection.getInstance().getConnection().createStatement().execute("DELETE FROM item WHERE ItemCode='" + txtItemCode.getText() + "'");
-
-            if (!deleteStatus) {
-                loadTable();
-
-                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setContentText("Item Deleted Successfully!");
-                alert.show();
-
-                clearText();
-            }
-
-        } catch (SQLException | ClassNotFoundException e) {
+        if (!ItemController.getInstance().deleteItem(txtItemCode.getText())){
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText(e.getMessage());
+            alert.setContentText("Invalid Item Code!");
             alert.show();
+            return;
         }
+
+        loadTable();
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setContentText("Item Deleted Successfully!");
+        alert.show();
+
+        clearText();
     }
 
     public void btnEditOnAction(ActionEvent actionEvent) {
-        try {
-            String packSize = txtPackSize.getText() + cmbSizeUnit.getValue();
+        String packSize = txtPackSize.getText() + cmbSizeUnit.getValue();
+        Item item=new Item(
+                txtItemCode.getText(),
+                txtDescription.getText(),
+                packSize,
+                Double.parseDouble(txtPrice.getText()),
+                Integer.parseInt(txtQtyOnHand.getText()));
 
-            String sql = "UPDATE item SET " +
-                    "ItemCode='" + txtItemCode.getText() + "'," +
-                    "Description='" + txtDescription.getText() + "'," +
-                    "PackSize='" + packSize + "'," +
-                    "UnitPrice='" + Double.parseDouble(txtPrice.getText()) + "'," +
-                    "QtyOnHand='" + Integer.parseInt(txtQtyOnHand.getText()) + "'" +
-                    "WHERE ItemCode='"+txtItemCode.getText()+"'";
-
-            boolean updateStatus = DBConnection.getInstance().getConnection().createStatement().execute(sql);
-
-            if (!updateStatus){
-                loadTable();
-
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Success");
-                alert.setContentText("Item Updated Successfully!");
-                alert.show();
-
-                clearText();
-            }
-        } catch (SQLException | ClassNotFoundException e) {
+        if(!ItemController.getInstance().updateItem(item)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText(e.getMessage());
+            alert.setContentText("An Error Occurred!\nPlease Check Your Input");
             alert.show();
+            return;
         }
+
+        loadTable();
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Success");
+        alert.setContentText("Item Updated Successfully!");
+        alert.show();
+
+        clearText();
+
     }
 
     public void btnAddOnAction(ActionEvent actionEvent) {
@@ -128,29 +117,19 @@ public class ManageItemFormController implements Initializable {
                 Integer.parseInt(txtQtyOnHand.getText())
         );
 
-        try {
-            Connection connection = DBConnection.getInstance().getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO item VALUES (?,?,?,?,?)");
-            preparedStatement.setString(1, item.getItemCode());
-            preparedStatement.setString(2, item.getDescription());
-            preparedStatement.setString(3, item.getPackSize());
-            preparedStatement.setDouble(4, item.getUnitPrice());
-            preparedStatement.setInt(5, item.getQtyOnHand());
-
-            preparedStatement.execute();
-
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setContentText("Item added successfully!");
-            alert.show();
-
-            loadTable();
-            clearText();
-
-        } catch (ClassNotFoundException | SQLException e) {
+        if (!ItemController.getInstance().addItem(item)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText(e.getMessage());
+            alert.setContentText("An Error Occurred!\nPlease Check Your Input");
             alert.show();
+
+            return;
         }
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setContentText("Item added successfully!");
+        alert.show();
+
+        loadTable();
+        clearText();
     }
 
     public void btnSearchOnAction(ActionEvent actionEvent) {
@@ -161,7 +140,9 @@ public class ManageItemFormController implements Initializable {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("Incorrect Item Code");
             alert.showAndWait();
+            return;
         }
+
         String[] packSize = item.getPackSize().split("(?<=\\d)(?=\\D)");
 
         String packSizeValue = packSize[0];
@@ -172,6 +153,41 @@ public class ManageItemFormController implements Initializable {
         cmbSizeUnit.setValue(packSizeUnit);
         txtPrice.setText(item.getUnitPrice().toString());
         txtQtyOnHand.setText(item.getQtyOnHand().toString());
+    }
+
+
+    public void loadDropMenu() {
+        ObservableList<String> units = FXCollections.observableArrayList();
+        units.add("kg");
+        units.add("g");
+        units.add("L");
+        units.add("ml");
+        cmbSizeUnit.setItems(units);
+    }
+
+    public void clearText() {
+        txtItemCode.clear();
+        txtDescription.clear();
+        txtPrice.clear();
+        txtPackSize.clear();
+        txtQtyOnHand.clear();
+        cmbSizeUnit.setValue(null);
+    }
+
+    public void loadTable() {
+        ObservableList<ItemTableTM> itemTableData = FXCollections.observableArrayList();
+
+        ItemController.getInstance().getAllItems().forEach(item -> {
+            ItemTableTM itemTable = new ItemTableTM(
+                    item.getItemCode(),
+                    item.getDescription(),
+                    item.getPackSize(),
+                    item.getUnitPrice(),
+                    item.getQtyOnHand()
+            );
+            itemTableData.add(itemTable);
+        });
+        tblItemData.setItems(itemTableData);
     }
 
     public void loadButtons(){
@@ -209,39 +225,6 @@ public class ManageItemFormController implements Initializable {
         btnNavOrders.setGraphic(view3);
         //Set the image to the top
         btnNavOrders.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
-    }
-    public void loadDropMenu() {
-        ObservableList<String> units = FXCollections.observableArrayList();
-        units.add("kg");
-        units.add("g");
-        units.add("L");
-        units.add("ml");
-        cmbSizeUnit.setItems(units);
-    }
-
-    public void clearText() {
-        txtItemCode.clear();
-        txtDescription.clear();
-        txtPrice.clear();
-        txtPackSize.clear();
-        txtQtyOnHand.clear();
-        cmbSizeUnit.setValue(null);
-    }
-
-    public void loadTable() {
-        ObservableList<ItemTableTM> itemTableData = FXCollections.observableArrayList();
-
-        ItemController.getInstance().getAllItems().forEach(item -> {
-            ItemTableTM itemTable = new ItemTableTM(
-                    item.getItemCode(),
-                    item.getDescription(),
-                    item.getPackSize(),
-                    item.getUnitPrice(),
-                    item.getQtyOnHand()
-            );
-            itemTableData.add(itemTable);
-        });
-        tblItemData.setItems(itemTableData);
     }
 
     public void btnNavCustomersOnAction(ActionEvent actionEvent) {
